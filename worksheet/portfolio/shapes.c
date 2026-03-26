@@ -67,16 +67,16 @@ float triangleArea( Triangle tri)
 }
 
 
-bool samePoint (Point p1, Point P2)
+bool samePoint (Point P1, Point P2)
 {
-    return fabs(P1.x - P2.x) < 1e-6 && fabs(p1.y - P2.y) < 1e-6;
+    return fabs(P1.x - P2.x) < 1e-6 && fabs(P1.y - P2.y) < 1e-6;
 }
 
 bool pointInLine (Point P , Line L) 
 
 {
 
-    return samePoint (P,L.p[0]) || samePoint(P, L.p[1]);
+    return samePoint (P, L.p[0]) || samePoint(P, L.p[1]);
 
 
 }
